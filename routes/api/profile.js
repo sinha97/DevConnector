@@ -1,10 +1,11 @@
 const express = require('express');
-const request = require('request');
+//const request = require('request');
 const config = require('config');
 const router = express.Router();
 const auth = require('../../middleware/auth');
 const { check, validationResult } = require('express-validator');
 const normalize = require('normalize-url');
+const axios = require('axios');
 
 const Profile = require('../../models/Profile');
 const User = require('../../models/User');
@@ -321,7 +322,7 @@ router.get('/github/:username', async (req, res) => {
     );
     const headers = {
       'user-agent': 'node.js',
-      Authorization: `token ${config.get('githubToken')}`
+      Authorization: `token ${config.get('githubToken1')}`
     };
 
     const gitHubResponse = await axios.get(uri, { headers });

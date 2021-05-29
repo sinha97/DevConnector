@@ -1,8 +1,6 @@
 {
     "mongoURI": "mongodb+srv://admin:weTAtPfher7h55yq@devcluster-1.bmayd.mongodb.net/<dbname>?retryWrites=true&w=majority",
     "jwtSecret": "secrettoken",
-    "githubClientId": "db23a2856c2d0d8030ba",
-    "githubSecret": "069f340807733f881971de40a67b98bfae2a3faf",
-    "gitToken":"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"
+    "gitToken": "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"
   }
   
